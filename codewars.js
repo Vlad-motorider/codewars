@@ -137,3 +137,10 @@ function isDivisible(n, x, y) {
 
 
 
+// SOLUTION
+// Code as fast as you can! You need to double the integer and return it.
+
+// CONDITION
+function doubleInteger(i) {
+  return i*2;
+}
