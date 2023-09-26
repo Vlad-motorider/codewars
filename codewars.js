@@ -154,3 +154,17 @@ function getCount(str) {
 function makeNegative(num) {
   return Math.sign(num) === 1 ? -num : num
   }
+
+
+
+// SOLUTION
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+// CONDITION
+function boolToWord( bool ){
+  if(bool === true) {
+    return "Yes";
+  } else if(bool === false) {
+    return "No";
+  }
+}
