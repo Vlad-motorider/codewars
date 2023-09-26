@@ -76,8 +76,6 @@ function climb(n) {
   return seq.reverse();
 }
 
-
-
 // CONDITION
 // Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
 
@@ -85,16 +83,14 @@ function climb(n) {
 // [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
 
 // SOLUTION
-function divisibleBy(numbers, divisor){
-  return numbers.filter(n => n % divisor == 0);
+function divisibleBy(numbers, divisor) {
+  return numbers.filter((n) => n % divisor == 0);
 }
-
-
 
 // CONDITION
 // Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-// For example, for [1, 2, 2] it should return 9 because 
+// For example, for [1, 2, 2] it should return 9 because
 // 1
 // 2
 // +
@@ -105,42 +101,50 @@ function divisibleBy(numbers, divisor){
 // 2
 // =
 // 9
-// 1 
+// 1
 // 2
-//  +2 
+//  +2
 // 2
-//  +2 
+//  +2
 // 2
 //  =9.
 
 // SOLUTION
-function squareSum(numbers){
+function squareSum(numbers) {
   var total = 0;
-  for(var i = 0; i < numbers.length; i++) {
-  total += numbers[i] * numbers[i]; 
+  for (var i = 0; i < numbers.length; i++) {
+    total += numbers[i] * numbers[i];
+  }
+  return total;
 }
-return total;
-}
-
-
 
 // CONDITION
 // Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero numbers.
 
 function isDivisible(n, x, y) {
-  if(n%x == 0 && n%y == 0) { 
+  if (n % x == 0 && n % y == 0) {
     return true;
   } else {
-    return false
-  };
+    return false;
+  }
 }
-
-
 
 // SOLUTION
 // Code as fast as you can! You need to double the integer and return it.
 
 // CONDITION
 function doubleInteger(i) {
-  return i*2;
+  return i * 2;
+}
+
+
+
+// SOLUTION
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+
+// CONDITION
+function getCount(str) {
+  return (str.match(/[aeiou]/ig) || []).length;
 }
