@@ -137,8 +137,6 @@ function doubleInteger(i) {
   return i * 2;
 }
 
-
-
 // SOLUTION
 // Return the number (count) of vowels in the given string.
 // We will consider a, e, i, o, u as vowels for this Kata (but not y).
@@ -146,5 +144,13 @@ function doubleInteger(i) {
 
 // CONDITION
 function getCount(str) {
-  return (str.match(/[aeiou]/ig) || []).length;
+  return (str.match(/[aeiou]/gi) || []).length;
 }
+
+// SOLUTION
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+// CONDITION
+function makeNegative(num) {
+  return Math.sign(num) === 1 ? -num : num
+  }
