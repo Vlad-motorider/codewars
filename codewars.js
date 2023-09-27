@@ -193,7 +193,7 @@ function solution(str){
 
 // CONDITION
 function numberToString(num) {
-  return num.toString();
+   return num.toString();
 }
 
 
@@ -207,7 +207,7 @@ function numberToString(num) {
 // CONDITION
 function repeatStr (n, s) {
    return s.repeat(n);
- }
+}
 
 
 
@@ -217,7 +217,34 @@ function repeatStr (n, s) {
  //[10, 343445353, 3453445, 3453545353453]should return 3453455.
 
  // CONDITION
- function sumTwoSmallestNumbers(numbers) {
+function sumTwoSmallestNumbers(numbers) {
    const numbersSorted = [...numbers].sort((a, b) => a - b)
    return numbersSorted[0] + numbersSorted[1]
- }
+}
+
+
+
+// SOLUTION
+// Your task is to create a function that does four basic mathematical operations.
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+// Examples(Operator, value1, value2) --> output
+// ('+', 4, 7) --> 11
+// ('-', 15, 18) --> -3
+// ('*', 5, 5) --> 25
+// ('/', 49, 7) --> 7
+
+ // CONDITION
+function basicOp(operation, value1, value2) {
+   switch (operation) {
+      case '+':
+      return value1 + value2
+      case '-':
+      return value1 - value2
+      case '*':
+       return value1 * value2
+      case '/':
+      return value1 / value2
+   }
+}
+
