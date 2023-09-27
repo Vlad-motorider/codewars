@@ -195,3 +195,16 @@ function solution(str){
 function numberToString(num) {
   return num.toString();
 }
+
+
+
+// SOLUTION
+// Write a function that takes an integer n and a string s as parameters and returns a string repeating exactly n times.
+// Examples (input -> output)
+// 6, "I"     -> "IIIIII"
+// 5, "Hello" -> "HelloHelloHelloHelloHello"
+
+// CONDITION
+function repeatStr (n, s) {
+   return s.repeat(n);
+ }
