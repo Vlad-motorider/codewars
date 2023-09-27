@@ -208,3 +208,16 @@ function numberToString(num) {
 function repeatStr (n, s) {
    return s.repeat(n);
  }
+
+
+
+ // SOLUTION
+ //Create a function that returns the sum of the two smallest positive integers for an array of at least 4 positive integers. No floating point numbers or non-positive integers will be transmitted.
+ //For example, if the array is passed as [19, 5, 42, 2, 77], the result should be 7.
+ //[10, 343445353, 3453445, 3453545353453]should return 3453455.
+
+ // CONDITION
+ function sumTwoSmallestNumbers(numbers) {
+   const numbersSorted = [...numbers].sort((a, b) => a - b)
+   return numbersSorted[0] + numbersSorted[1]
+ }
