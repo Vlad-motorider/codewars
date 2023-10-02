@@ -360,4 +360,11 @@ function firstNonConsecutive(arr) {
 
 
 
+// SOLUTION
+// This function should return an object, but it's not doing what's intended. What's wrong?
 
+// CONDITION
+function mystery() {
+   var results = {sanity: 'Hello'};
+   return results;
+}
