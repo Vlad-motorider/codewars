@@ -324,3 +324,30 @@ class Kata {
 function sortByLength (array) {
    return [...array].sort((a,b)=>a.length-b.length)
 };
+
+
+
+// SOLUTION
+// Using n as a parameter in the function pattern, where n>0, complete the codes to get the pattern (take the help of examples):
+// Note: There is no newline in the end (after the pattern ends)
+
+// CONDITION
+function pattern(n){
+   let arr=[];
+   for(let i=1;i<n+1;i++){
+      arr.push('1'+'*'.repeat(i-1)+i)
+   }
+   return arr.join('\n').replace('1','');
+}
+
+
+
+
+
+
+
+
+
+
+
+
