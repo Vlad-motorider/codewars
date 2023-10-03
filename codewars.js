@@ -368,3 +368,13 @@ function mystery() {
    var results = {sanity: 'Hello'};
    return results;
 }
+
+
+
+// SOLUTION
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+// CONDITION
+function opposite(number) {
+   return -number
+}
