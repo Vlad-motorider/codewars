@@ -415,3 +415,12 @@ function stringToNumber(str) {
 }
 
 
+
+// SOLUTION
+// Write a function that removes the spaces from the string, then return the resultant string.
+
+// CONDITION
+function noSpace(x){
+   return x.split(' ').join('');
+}
+
