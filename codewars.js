@@ -434,3 +434,13 @@ function noSpace(x){
 function greet(name){
    return name = `Hello, ${name} how are you doing today?`;
 }
+
+
+
+// SOLUTION
+// Write a function which converts the input string to uppercase.
+
+// CONDITION
+function makeUpperCase(str) {
+   return str.toUpperCase();
+}
