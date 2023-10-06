@@ -455,3 +455,22 @@ function makeUpperCase(str) {
 function findShort(s){
    return Math.min(...s.split(" ").map (s => s.length));
 }
+
+
+
+// SOLUTION
+// Introduction
+// The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+// Task
+// Given a year, return the century it is in.
+
+// CONDITION
+function century(year) {
+   let result = String(year / 100).split('.');
+   if(result.length === 2) {
+      return Number(result[0]) + 1;
+   } else {
+      return Number(result[0]);
+   }
+}
+
