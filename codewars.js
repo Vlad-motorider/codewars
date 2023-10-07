@@ -488,3 +488,13 @@ function abbrevName(name){
    return name.split(' ').map(name => name[0].toUpperCase()).join('.');
 }
 
+
+
+// SOLUTION
+// Implement a function which convert the given boolean value into its string representation.
+// Note: Only valid inputs will be given.
+
+// CONDITION
+function booleanToString(b) {
+   return b ? 'true' : 'false'
+}
