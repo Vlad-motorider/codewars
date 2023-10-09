@@ -513,3 +513,13 @@ function booleanToString(b) {
 function reverse(string){
    return string.split(' ').reverse().join(' ');
 }
+
+
+
+// SOLUTION
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+// CONDITION
+function simpleMultiplication(number) {
+   return number * (number % 2 === 0 ? 8 : 9);
+}
