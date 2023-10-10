@@ -523,3 +523,13 @@ function reverse(string){
 function simpleMultiplication(number) {
    return number * (number % 2 === 0 ? 8 : 9);
 }
+
+
+
+// SOLUTION
+// Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+// CONDITION
+function digitize(n) {
+   return String(n).split('').reverse().map(char => Number(char));
+}
