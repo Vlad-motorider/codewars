@@ -661,3 +661,12 @@ function areYouPlayingBanjo(name) {
 function reverseWords(str){
    return str.split(' ').reverse().join(' '); // reverse those words
 }
+
+
+
+// SOLUTION
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// Return your answer as a number.
+
+// CONDITION
+const sumMix = x => x.reduce((startValue, currentValue) => startValue + Number(currentValue), 0);
