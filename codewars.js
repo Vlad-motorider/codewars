@@ -670,3 +670,14 @@ function reverseWords(str){
 
 // CONDITION
 const sumMix = x => x.reduce((startValue, currentValue) => startValue + Number(currentValue), 0);
+
+
+
+// SOLUTION
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+// CONDITION
+function removeExclamationMarks(s) {
+   const regExp = /!/g;
+   return s.replace(regExp, '');
+}
