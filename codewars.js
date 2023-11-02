@@ -893,3 +893,15 @@ function sumArray(array) {
    if (!Array.isArray(array)) return 0
    return array.sort((a, b) => a - b).slice(1, array.length - 1).reduce((a, b) => a + b, 0);
 }
+
+
+
+// CONDITION
+// You will be given a list of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.
+// The returned value must be a string, and have "***" between each of its letters.
+// You should not remove or add elements from/to the array.
+
+// SOLUTION
+function twoSort(s) {
+   return s.sort()[0].split('').join('***');
+}
